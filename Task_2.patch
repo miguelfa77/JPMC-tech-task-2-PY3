@@ -1,0 +1,31 @@
+From be628e5c17b84b6b19887a7a1f50c7f9c0dd57d6 Mon Sep 17 00:00:00 2001
+From: Miguel Ferrer <mferrer.ieu2021@student.ie.edu>
+Date: Tue, 5 Apr 2022 01:40:53 +0200
+Subject: [PATCH] enter
+
+---
+ src/Graph.tsx | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 19a1556..c73ad76 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -52,8 +52,12 @@ class Graph extends Component<IProps, {}> {
+       elem.setAttribute('view' , 'y_line'),
+       elem.setAttribute('column-pivots' , '["stock"]');
+       elem.setAttribute('row-pivots', '["timestamp"]');
+-      elem.setAttribute('collumns', '["top_ask_price"]');
+-      elem.setAttribute('aggregates' , `{"stock":"distinct count","top_ask_price":"avg","top_bid_price":"avg","timestamp":"distinct count"}`);
++      elem.setAttribute('columns', '["top_ask_price"]');
++      elem.setAttribute('aggregates' ,
++       `{"stock":"distinct count",
++       "top_ask_price":"avg",
++       "top_bid_price":"avg",
++       "timestamp":"distinct count"}`);
+     }
+   }
+   //At this point graph should appear. Done.
+-- 
+2.15.0
+
