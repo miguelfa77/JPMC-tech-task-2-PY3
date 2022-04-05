@@ -5,11 +5,7 @@
   "dependencies": {
     "@finos/perspective": "^0.6.2",
     "@finos/perspective-viewer": "^0.6.2",
-<<<<<<< HEAD
     "@finos/perspective-viewer-highcharts": "^0.5.2",
-=======
-    "@finos/perspective-viewer-highcharts": "^0.5.12",
->>>>>>> 021465f048c530e5f7716d959a0fec5cf5ff37bd
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.19",
     "@types/react": "^16.9.0",
